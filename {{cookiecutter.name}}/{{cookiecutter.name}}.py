@@ -4,14 +4,14 @@
 
 from flask import Flask
 
-APP = Flask(__name__)
+app = Flask(__name__)
 
 
-@APP.route('/')
+@app.route('/')
 def hello():
     """Welcome the web user."""
     return 'Hello World!'
 
 
 if __name__ == '__main__':
-    APP.run()
+    app.run()
